@@ -1,58 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài 3</title>
-    <link rel="icon" href="./icons/icon-facebook-19-2.jpg.webp" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <i class="fa-solid fa-book-bookmark"></i>
-    <i class="fa fa-camera-retro fa-lg"></i> lớn hơn 33% so với thông thường
-    <i class="fa fa-camera-retro fa-2x"></i> lớn gấp đôi
-    <i class="fa fa-camera-retro fa-3x"></i> lớn gấp ba lần
-    <i class="fa fa-camera-retro fa-4x"></i> lớn gấp bốn lần
-    <i class="fa fa-camera-retro fa-10x"></i>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 3</title>
+		<link rel="icon" href="./icons/icon-facebook-19-2.jpg.webp" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+		/>
+		<style>
+			.bai_3 {
+				border: 2px solid black;
+				padding: 15px;
+			}
+			.bai_3_tt {
+				border: 5px solid red;
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bai_3">
+			<i class="fa-solid fa-book-bookmark"></i>
+			<i class="fa fa-camera-retro fa-lg"></i> lớn hơn 33% so với thông thường
+			<i class="fa fa-camera-retro fa-2x"></i> lớn gấp đôi
+			<i class="fa fa-camera-retro fa-3x"></i> lớn gấp ba lần
+			<i class="fa fa-camera-retro fa-4x"></i> lớn gấp bốn lần
+			<i class="fa fa-camera-retro fa-10x"></i>
 
-    <br />
-    <i class="fa-regular fa-bomb"></i>
-    <i class="fa-solid fa-bolt-lightning fa-10x"></i>
+			<br />
+			<i class="fa-regular fa-bomb"></i>
+			<i class="fa-solid fa-bolt-lightning fa-10x"></i>
 
-    <br />
-    <hr />
+			<br />
+			<hr />
 
-    <h1>Ví dụ về hyperlink</h1>
-    <a href="https://zingnews.vn/" target="_blank">Zing News</a>
-    <a href="#test">to Id</a>
-    <hr />
-    <a href="./html/about.html"> About</a>
-    <hr />
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/PNjUG3s__JE"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
-    <h1>Thực hành với thẻ img</h1>
-    <img
-      src="https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/3-8.png"
-      alt="Hình ảnh bài 3"
-    />
-    <hr />
-    <img
-      src="./Nguyen_Huy_Binh1.webp"
-      alt="Hình ảnh 2"
-      width="300px"
-      height="500px"
-    />
-    <h1 id="test">Hello ID</h1>
-  </body>
+			<h1>Ví dụ về hyperlink</h1>
+			<a href="https://zingnews.vn/" target="_blank">Zing News</a>
+			<a href="#test">to Id</a>
+			<hr />
+			<a href="./html/about.html"> About</a>
+			<hr />
+			<iframe
+				width="560"
+				height="315"
+				src="https://www.youtube.com/embed/PNjUG3s__JE"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+			<h1>Thực hành với thẻ img</h1>
+			<img
+				src="https://cdn.sforum.vn/sforum/wp-content/uploads/2018/11/3-8.png"
+				alt="Hình ảnh bài 3"
+			/>
+			<hr />
+			<img src="./Nguyen_Huy_Binh1.webp" alt="Hình ảnh 2" width="300px" height="500px" />
+			<h1 id="test">Hello ID</h1>
+		</div>
+		<div class="bai_3_tt">
+			<h1>Bài 3 tiếp theo - ngày 29/08/2022</h1>
+			<hr />
+			<h3>Ví dụ về thẻ table</h3>
+			<table border>
+				<caption>
+					Đây là một bảng
+				</caption>
+				<tr style="background-color: yellow">
+					<th>1.1</th>
+
+					<th>1.2</th>
+
+					<th>1.3</th>
+				</tr>
+
+				<tr style="background-color: red">
+					<td rowspan="2">
+						2.1 <br />
+						-3.1
+					</td>
+
+					<td>2.2</td>
+
+					<td>2.3</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">3.2 - 3.3</td>
+				</tr>
+				<td>4.1</td>
+
+				<td>4.2</td>
+
+				<td>4.3</td>
+				<caption>
+					This is a table
+				</caption>
+			</table>
+			<table>
+				<tfoot>
+					<tr>
+						<td>This is a footer</td>
+					</tr>
+				</tfoot>
+				<thead>
+					<tr>
+						<td>This is a header</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>This is a body</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr />
+			<h1>Giới thiệu các thẻ ngữ nghĩa và một số thẻ thông dụng</h1>
+			<img src="./images/html5-cac-the-cau-truc-ngu-nghia.png.crdownload" alt="layout" />
+			<address>address - thẻ địa chỉ in nghiêng</address>
+			<blockquote>Thẻ blockquote thụt vào trong</blockquote>
+			<details>
+				<summary>Đây là thẻ details kết hợp summary</summary>
+				<p>
+					Epcot is a theme park at Walt Disney World Resort featuring exciting
+					attractions, international pavilions, award-winning fireworks and seasonal
+					special events.
+				</p>
+			</details>
+			<h3>Ví dụ về thẻ inline</h3>
+			<hr />
+			<a href="dfsfsdf">Thẻ a</a>
+			<button>Thẻ button</button>
+			<i>Thẻ i</i>
+			<b>Thẻ b</b>
+			<span>Thẻ span</span>
+			<hr />
+			<h3>Ví dụ về thẻ Block</h3>
+			<div style="background-color: orange; width: 20%">Thẻ div</div>
+			<p style="background-color: green; width: 20%">Thẻ p</p>
+			<header style="background-color: blue">Thẻ header</header>
+		</div>
+	</body>
 </html>

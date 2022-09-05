@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 4 ngày 05/09/2022</title>
+		<link rel="stylesheet" href="./style.css" />
+		<style>
+			body {
+				border: 5px solid red;
+				margin: 10px;
+				font-size: 18px;
+			}
+			h5 {
+				color: #bf4747;
+			}
+			.class-1 {
+				background-color: purple;
+			}
+			#id-1 {
+				background-color: orange;
+				height: 500px;
+			}
+			#id-2 {
+				background-color: green;
+				height: 500px;
+			}
+			#main {
+				height: 500px;
+			}
+			.block-green {
+				height: 200px;
+				width: 200px;
+				background-color: blue;
+			}
+			.test-color {
+				height: 100px;
+				width: 1000px;
+				background-color: rgba(255, 192, 203, 0.503);
+			}
+			.font {
+				font-family: 'Silkscreen', cursive;
+			}
+			@font-face {
+				font-family: test-font;
+				src: url('./fonts/QwitcherGrypen-Bold.ttf');
+			}
+			.canh-le {
+				width: 500px;
+				height: 20px;
+				background-color: green;
+				text-align: center;
+				line-height: 100%;
+			}
+		</style>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Silkscreen:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<a href="#id-1">to ID</a>
+		<a href="#id-2">to ID</a>
+		<h1 style="color: green; font-size: 50px">Bài 4 ngày 05/09/2022</h1>
+		<h3>Có 3 cách để đưa css vào:</h3>
+		<h5 style="color: orange">Đưa ccs vào theo kiểu inline</h5>
+		<h5>Internal style css</h5>
+		<h5>External style css</h5>
+		<h1>Thẻ H1 thông thường</h1>
+		<h2 class="class-1">Truyền CSS theo class</h2>
+		<h2>Thẻ H2 không có class</h2>
+		<div id="id-1">Dùng class-1</div>
+		<h2 id="id-2">Thẻ H2 có ID</h2>
+		<main id="main">
+			<div class="block-green">
+				<h1 class="test-color">Giới thiệu về màu sắc trong css</h1>
+			</div>
+			<hr />
+			<h1>Giới thiệu về các thuộc tính css</h1>
+			<div class="font">Chỉnh font chữ</div>
+			<div>Chỉnh font chữ</div>
+			<div style="font-family: test-font">Font test config</div>
+			<div style="text-transform: uppercase">In hoa thông thường</div>
+			<div style="font-variant: small-caps">In hoa đặc biệt</div>
+			<div class="canh-le">Giới thiệu canh lề</div>
+		</main>
+	</body>
+</html>

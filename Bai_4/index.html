@@ -54,6 +54,47 @@
 				text-align: center;
 				line-height: 100%;
 			}
+			.block {
+				background-color: red;
+				width: 30%;
+				height: 100px;
+				display: block;
+			}
+			.inline {
+				background-color: green;
+				width: 30%;
+				height: 100px;
+				display: inline;
+			}
+			.inline-block {
+				background-color: orange;
+				width: 30%;
+				height: 100px;
+				display: inline-block;
+			}
+			.display-none {
+				display: none;
+				height: 100px;
+			}
+			.visibility-hidden {
+				visibility: hidden;
+				height: 100px;
+			}
+			.box-model {
+				margin: 5px;
+				padding: 20px;
+				background-color: green;
+				border: 30px solid red;
+				display: inline-block;
+				width: 49%;
+				box-sizing: border-box;
+			}
+			a {
+				text-decoration: none;
+			}
+			li {
+				list-style-type: armenian;
+			}
 		</style>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Silkscreen:wght@400;700&display=swap"
@@ -85,6 +126,58 @@
 			<div style="text-transform: uppercase">In hoa thông thường</div>
 			<div style="font-variant: small-caps">In hoa đặc biệt</div>
 			<div class="canh-le">Giới thiệu canh lề</div>
+			<hr />
+			<h1>Bài 4 tiếp theo - ngày 07/09/2022</h1>
+			<h1>Nhắc về block, inline và inline-block</h1>
+			<div class="block">This is a block</div>
+			<div class="inline">This is a inline</div>
+			<div class="inline-block">This is a inline-block</div>
+			<div class="display-none">Giới thiệu về display: none</div>
+			<div class="visibility-hidden">Giới thiệu về visibility: hidden</div>
+
+			<h1>Hello cac ban</h1>
+			<hr />
+			<h1>Giới thiệu về float and clear</h1>
+			<a
+				href="https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_float3"
+				target="_blank"
+				>Tài liệu float</a
+			>
+			<h2>Tìm hiểu thêm về flex và grid</h2>
+			<a href="https://www.w3schools.com/css/css3_flexbox.asp">Flex</a>
+			<a href="https://www.w3schools.com/css/css_grid.asp">Grid</a>
+			<h2>Tìm hiểu về overflow</h2>
+			<a href="https://www.w3schools.com/css/css_overflow.asp">Overflow</a>
+			<table>
+				<tr>
+					<td>Hello</td>
+					<td>Hello 2</td>
+				</tr>
+				<tr>
+					<td>Hello 3</td>
+					<td>Hello 4</td>
+				</tr>
+			</table>
+			<hr />
+			<h1>Giới thiệu về box-model</h1>
+			<i class="box-model">This is box model</i>
+			<i class="box-model">This is box model 2</i>
+			<a href="https://www.w3schools.com/css/css_boxmodel.asp">Box-model</a>
+
+			<h1>Thẻ link</h1>
+			<a href="https://www.w3schools.com/css/css_link.asp">Thẻ link</a>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+			<ol>
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+			</ol>
 		</main>
 	</body>
 </html>

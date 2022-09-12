@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	border: 5px solid red;
+	margin: 20px;
+	padding: 20px;
+}
+
+header {
+	margin: 20px 0;
+	padding: 20px 0;
+}
+.title {
+	color: red;
+	text-decoration: underline;
+	margin: 20px 0 10px;
+	padding: 10px 0;
+}
+#id-1 {
+	color: green;
+	font-weight: bold;
+}
+.class-1 {
+	color: blue;
+	font-weight: bold;
+}
+i {
+	color: pink;
+	font-weight: bold;
+}
+
+div p {
+	background-color: yellow;
+}
+a[href*='zing'] {
+	color: yellow;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+a[href^='https://www.w3schools']
+{
+	background-color: pink;
+	font-size: 20px;
+	text-decoration: none;
+}
+a[href$='css_pseudo_classes.asp'] {
+	color: green;
+	font-size: 20px;
+	text-decoration: none;
+}
+.viet-gop {
+	padding: 10px 15px 5px 0px;
+	margin: 20px 5px 10px;
+}
+
+.background-image {
+	background-image: url('./images/hinh-anh-tet-trung-thu-dep-1.jpg');
+	background-repeat: no-repeat;
+    background-size: contain;
+    height: 1000px;
+    background-position: center center;
+    opacity: 0.5;
+

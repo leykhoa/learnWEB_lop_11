@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+header {
+	text-align: center;
+	color: red;
+	padding: 50px;
+}
+main {
+	width: 90%;
+	margin: 0 auto;
+	border: 5px solid green;
+	height: 1000px;
+	font-family: 'Ms Madi', cursive;
+}
+
+#banner {
+	background-image: url('../images/banner.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	position: relative;
+}
+.banner-title {
+	background-color: rgba(255, 166, 0, 0.862);
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	padding: 5px;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+#banner-2 {
+	position: relative;
+}
+.banner-title-2 {
+	background-color: rgba(255, 166, 0, 0.862);
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	padding: 5px;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+	width: 180px;
+}
+nav li a {
+	text-decoration: none;
+}
+nav ul li:hover {
+	background-color: orange;
+	color: white;
+}
+nav li {
+	position: relative;
+}
+nav li ol {
+	display: none;
+	position: absolute;
+	left: 0px;
+}
+
+nav li:hover ol {
+	background-color: grey;
+	display: block;
+	width: inherit;
+}
+nav li:hover ol li {
+	display: block;
+	width: inherit;
+}
+nav ol li:hover a {
+	color: white !important;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 7. Biến, kiểu dữ liệu, phép toán</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script>
+			var name = 'Khoa';
+			function handleClick() {
+				const element = document.getElementById('test');
+				element.style.color = 'red';
+				element.innerHTML = ' Thay đổi nội dụng hiển thị';
+			}
+			function handleAlert() {
+				name = 'Quốc Khánh';
+				alert('name: ' + name);
+				alert('document URI: ' + document.baseURI);
+				alert('document title: ' + document.title);
+				console.log('document', document);
+			}
+			function handlePrompt() {
+				prompt('My name is: ' + name);
+			}
+			function handleWritePage() {
+				document.write('<h1>Hello, let write page</h1>');
+			}
+			function handleConsole() {
+				console.log("Xin chào các bạn, I'm console.log()");
+				console.warn("Xin chào các bạn, I'm console.warn()");
+				console.error("Xin chào các bạn, I'm console.error()");
+			}
+			function handleType() {
+				var student = {
+					name: 'Peter',
+
+					age: 23,
+
+					address: '711-2880 Nulla St.Mankato Mississippi',
+				};
+				console.log('check type of 1', typeof 1);
+				console.log('check type of 1', typeof '1');
+				console.log('check type of Hello', typeof 'Hello');
+				console.log('check type of {}', typeof {});
+				console.log('check type of []', typeof []);
+				alert('Name: ' + student.name);
+				console.log('So sánh 10>15: ', 10 > 15);
+				console.log('So sánh 10<15: ', 10 < 15);
+			}
+		</script>
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<header><h1>Bài 7. Biến, kiểu dữ liệu, phép toán - ngày 21.09.2022</h1></header>
+		<main>
+			<article>
+				<h3 class="title">1. Mục tiêu bài học</h3>
+			</article>
+			<hr />
+			<article>
+				<h3 class="title">2. Document Object Model (DOM)</h3>
+				<h4>
+					Tài liệu hỗ trợ:
+					<a href="https://www.w3schools.com/js/default.asp" target="_blank">w3schools</a
+					>,
+					<a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"
+						>developer.mozilla</a
+					>
+				</h4>
+				<h4>
+					Bài tập thực hành:
+					<a
+						href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript"
+						target="_blank"
+						>FreeCodeCamp</a
+					>
+				</h4>
+				<h5>1. Cách sử dụng JavaScript để thao tác với DOM</h5>
+				<br />
+				<h5>2. Một số hàm Javascript để thao tác với DOM</h5>
+				<br />
+				<button onclick="handleClick()">Click me!</button>
+				<button onclick="handleAlert()">Alert!</button>
+				<button onclick="handlePrompt()">Prompt!</button>
+				<button onclick="handleWritePage()">Click to write</button>
+				<button onclick="handleConsole()">Click to Console</button>
+				<button onclick="handleType()">Click type</button>
+				<div id="test">Hello</div>
+			</article>
+			<hr />
+			<article>
+				<h3 class="title">3. Biến trong JavaScript</h3>
+				<h4>Có 3 cách đặt biết: 1.var, 2.let, 3.const</h4>
+			</article>
+			<article>
+				<h3 class="title">4. Kiểu dữ liệu</h3>
+			</article>
+			<hr />
+			<article>
+				<h3 class="title">5. oán tử và biểu thức</h3>
+			</article>
+			<hr />
+			<article>
+				<h3 class="title">6. Exercise 2</h3>
+			</article>
+			<hr />
+			<article>
+				<h3 class="title">7. Lab 7</h3>
+			</article>
+			<hr />
+		</main>
+	</body>
+</html>

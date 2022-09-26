@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bài 8. Hàm trong Javascript</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+		<header><h1>Bài 8. Hàm trong Javascript - ngày 26.09.2022</h1></header>
+		<main>
+			<article class="title">
+				<h3>Hàm</h3>
+				<a href="https://www.w3schools.com/js/js_function_definition.asp"
+					>Tài liệu function w3schools</a
+				>
+				<br />
+				<button id="test" onclick="handleTest(2)">Hello cac ban</button>
+			</article>
+			<hr />
+			<article class="title">
+				<h3>Tổ chức code</h3>
+				<input id="input1" placeholder="enter log" />
+				<input id="input2" placeholder="enter error" />
+				<input id="input3" placeholder="enter warn" />
+				<br />
+				<button id="test" onclick="handleInput()">Click to get input value</button>
+			</article>
+			<hr />
+			<article class="title">
+				<h3>Sự kiện trong Javascript</h3>
+
+				<input id="on-change" onchange="handleOnChange()" />
+				<br />
+				<button id="test" onclick="handleInput(e) ">Click to get input value</button>
+				<br />
+				<hr />
+				<div onmouseover="handleMouseOver()" id="block-1">Block 1</div>
+				<div onmouseover="handleMouseOver2()" id="block-2">Block 2</div>
+				<img
+					src="https://vuongquocanh.com/wp-content/uploads/2018/05/london-eye-800x534.jpg"
+					width="400"
+					id="img"
+					onmouseover="handleMouseOver3()"
+				/>
+			</article>
+		</main>
+		<script src="js/script.js" type="text/javascript"></script>
+		<script>
+			// alert('Hello');
+		</script>
+	</body>
+</html>

@@ -71,3 +71,30 @@ do {
 } while (i < 5);
 fruits2.forEach((fruit) => console.log('fruit', fruit));
 //map()
+
+const Sumt = (n) => {
+	if (n === 1) {
+		return n;
+	}
+	return n + Sumt(n - 1);
+};
+
+console.log('check sum', Sumt(5));
+const giaiThua = (n) => {
+	if (n === 1) {
+		return n;
+	}
+	return n * giaiThua(n - 1);
+};
+
+console.log('check giai thua', giaiThua(50));
+
+const Uoc = (m, n) => {
+	let r = m % n;
+	let u;
+	if (r == 0) {
+		return (u = n);
+	}
+	m = n;
+	n = r;
+};

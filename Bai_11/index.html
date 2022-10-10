@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 11. Form & Validation </title>
+    <style>
+        header {
+            padding: 50px 0;
+            text-align: center;
+            color: red
+        }
+
+        main {
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+            text-align: left;
+            margin-left: 300px;
+        }
+
+        form input {
+            margin: 15px 0
+        }
+
+        .form {
+            width: 400px;
+            text-align: left;
+            margin-left: 300px;
+            height: 800px;
+        }
+
+        .form input {
+            margin: 15px 0
+        }
+
+        .error {
+            text-align: center;
+            font-weight: bold;
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bài 11. Form & Validation - ngày 10.10.2022</h1>
+    </header>
+    <main>
+        <form action="" onsubmit="handleSubmit()">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required maxlength="5" onclick="handleClick()"><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="5"><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required onclick="handleClick()"><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" onchange="handleOnchange()"><br>
+            <label for="birth">Birth</label>
+            <input type="date" name="birth" id="birth"><br>
+            <input type="submit" value="Click Here">
+            <button onclick="handleClick()">Click me</button>
+        </form>
+        <hr />
+        <div class="form">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name1" required><br>
+            <p class="error" id="error-name"></p>
+            <label for="age">Age</label>
+            <input type="age" name="age" id="age1" required onclick="handleClick()"><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email1" value="test@gmail.com" required onclick="handleClick()"><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password1" onchange="handleOnchange()"><br>
+            <label for="birth">Birth</label>
+            <input type="date" name="birth" id="birth1"><br>
+            <button onclick="handleSubmit()">Submit</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

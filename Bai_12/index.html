@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12. Giới thiệu Responsive Design </title>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <style>
+        header {
+            padding: 50px 0;
+            color: red;
+            text-align: center;
+        }
+
+        .test {
+            width: 50%;
+            background-color: green
+        }
+
+        .width-tuyet-doi {
+            width: 500px;
+            background-color: orange
+        }
+
+        .col {
+            width: 30%;
+            border: 1px solid black;
+            float: left;
+            height: 200px;
+            background-color: red
+        }
+
+        @media only screen and (max-width: 700px) {
+            .col {
+                width: 100%;
+            }
+        }
+
+        body {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bài 12. Giới thiệu Responsive Design - ngày 19.10.2022</h1>
+    </header>
+    <main>
+        <hr />
+        <h2>Tìm hiểu về Layout</h2>
+        <br />
+        <hr />
+        <br />
+        <h2>Responsive Design</h2>
+        <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media Queries</a>
+        <div></div>
+        <a href="https://www.w3schools.com/css/css_rwd_grid.asp" target="_blank">Grid View</a>
+        <br />
+        <hr />
+        <br />
+        <h2 class="test">Các đơn vị đo kích thước</h2>
+        <h2 class="width-tuyet-doi">Các đơn vị đo kích thước</h2>
+        <!-- <div class="row">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+        </div> -->
+        <h1 class="mobile">Hello Mobile</h1>
+        <h1 class="tablet">Hello Tablet</h1>
+        <h1 class="desktop">Hello Desktop</h1>
+    </main>
+</body>
+
+</html>

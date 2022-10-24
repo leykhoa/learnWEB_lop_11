@@ -1,0 +1,46 @@
+body {
+	background-color: red;
+}
+.mobile {
+	display: block;
+}
+.tablet {
+	display: none;
+}
+.desktop {
+	display: none;
+}
+
+@import url('tablet.css') screen and (min-width: 768px);
+@import url('desktop.css') screen and (min-width: 992px);
+
+/* @media only screen and (min-width: 768px) {
+	body {
+		background-color: orange;
+	}
+	.mobile {
+		display: none;
+	}
+	.tablet {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	body {
+		background-color: green;
+	}
+
+	.mobile {
+		display: none;
+	}
+	.tablet {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
+} */

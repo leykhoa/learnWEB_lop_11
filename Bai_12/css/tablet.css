@@ -1,0 +1,12 @@
+body {
+	background-color: orange;
+}
+.mobile {
+	display: none;
+}
+.tablet {
+	display: block;
+}
+.desktop {
+	display: none;
+}

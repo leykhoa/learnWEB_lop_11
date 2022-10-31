@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	height: 2000px;
+}
 header {
 	text-align: center;
 	color: red;
@@ -24,7 +27,7 @@ main {
 	position: relative;
 }
 .banner-title {
-	background-color: rgba(255, 166, 0, 0.862);
+	background-color: rgba(255, 192, 203, 0.739);
 	position: absolute;
 	bottom: 30px;
 	width: 100%;
@@ -39,27 +42,61 @@ main {
 	position: relative;
 }
 .banner-title-2 {
-	background-color: rgba(255, 166, 0, 0.862);
+	background-color: rgba(246, 196, 103, 0.62);
 	position: absolute;
 	bottom: 30px;
 	width: 100%;
 	padding: 5px;
-	font-size: 1.5rem;
+	font-size: 2em;
 	text-align: center;
 	font-weight: bold;
 	color: white;
+}
+.banner-description {
+	width: 100%;
+	position: absolute;
+	font-weight: bold;
+	text-align: center;
+	top: 20%;
+	font-size: 1.3em;
+	color: white;
+	z-index: 3;
+	text-shadow: 1px 1px black;
+}
+
+/* css nav */
+nav {
+	width: 100%;
+	position: relative;
+	font-weight: bold;
+}
+nav ul {
+	display: none;
+	background-color: rgba(238, 195, 115, 0.536);
+	padding-top: 15px;
+	width: 100%;
+}
+
+.btn-menu {
+	border: none;
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: rgba(255, 255, 255, 0);
+	font-size: 2.5em;
 }
 
 nav ul li {
 	display: inline-block;
 	padding: 10px;
-	width: 180px;
+	width: 100%;
 }
 nav li a {
 	text-decoration: none;
 }
 nav ul li:hover {
-	background-color: orange;
+	background-color: rgba(238, 195, 115, 0.536);
 	color: white;
 }
 nav li {
@@ -67,19 +104,45 @@ nav li {
 }
 nav li ol {
 	display: none;
-	position: absolute;
 	left: 0px;
+	width: 100%;
 }
 
 nav li:hover ol {
-	background-color: grey;
+	background-color: rgba(253, 253, 253, 0.736);
 	display: block;
-	width: inherit;
+	width: 100%;
+	border-radius: 10px;
 }
 nav li:hover ol li {
 	display: block;
 	width: inherit;
 }
 nav ol li:hover a {
-	color: white !important;
+	color: black !important;
+}
+
+/* css for tablets */
+@media only screen and (min-width: 768px) {
+	.btn-menu {
+		display: none;
+	}
+	#menu-ul {
+		display: block;
+	}
+	nav ul li {
+		display: inline-block;
+		padding: 10px;
+		width: 33%;
+		text-align: center;
+	}
+	nav li:hover ol {
+		position: absolute;
+		margin: 2%;
+		width: 96%;
+	}
+}
+
+/* css for desktop */
+@media only screen and (min-width: 1200px) {
 }

@@ -3,6 +3,12 @@
 	margin: 0;
 	padding: 0;
 }
+:root {
+	--color-background-nav: #7430f9;
+}
+a:visited {
+	color: red;
+}
 body {
 	height: 2000px;
 }
@@ -16,7 +22,7 @@ main {
 	margin: 0 auto;
 	border: 5px solid green;
 	height: 1000px;
-	font-family: 'Ms Madi', cursive;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #banner {
@@ -71,8 +77,7 @@ nav {
 	font-weight: bold;
 }
 nav ul {
-	display: none;
-	background-color: rgba(238, 195, 115, 0.536);
+	background-color: var(--color-background-nav);
 	padding-top: 15px;
 	width: 100%;
 }
@@ -96,7 +101,7 @@ nav li a {
 	text-decoration: none;
 }
 nav ul li:hover {
-	background-color: rgba(238, 195, 115, 0.536);
+	background-color: var(--color-background-nav);
 	color: white;
 }
 nav li {
@@ -133,13 +138,24 @@ nav ol li:hover a {
 	nav ul li {
 		display: inline-block;
 		padding: 10px;
-		width: 33%;
+		width: 32%;
 		text-align: center;
 	}
+
 	nav li:hover ol {
 		position: absolute;
-		margin: 2%;
-		width: 96%;
+		padding: 5px;
+		margin-top: 5px;
+		width: 100%;
+		background-color: var(--color-background-nav);
+		border-radius: 0;
+	}
+	nav li ol li:hover {
+		background-color: white;
+		border-radius: 5px;
+	}
+	nav li:hover a {
+		color: white;
 	}
 }
 
